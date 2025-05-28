@@ -9,14 +9,71 @@
 <body>
     <header id="header">
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
 
 
     <form id="survey-form">
 
+        <fieldset>
+            <label id="name-label" for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required/>
+            <label id="email-label" for="email" >Email: </label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required/>
+            <label id="number-label" for="age" >Age (optional) </label>
+            <input id="number" name="age" type="number" min="2" max="3" placeholder="Age" />
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+            <input type="radio" name="recommendation" value="definitely" />
+            <label>Definitely</label>
+            <input type="radio" name="recommendation" value="maybe" />
+             <label>Maybe</label>
+             <input type="radio" name="recommendation" value="not sure" />
+             <label>Not sure</label>
+        </fieldset>
+        
+            <label>What is your favorite feature of freeCodeCamp?</label>
+            <select id="dropdown">
+                <option value="">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects" >Projects</option>
+                <option value="community">Community</option>
+                <option value="open sources">Open Sources</option>
+            </select>
+    
+        <fieldset>
+            <legend>What would you like to see improved? (Check all that apply)</legend>
 
-
+            <input type="checkbox" value="front-end projects"/>
+            <label>Front-end Projects</label>
+               <input type="checkbox" value="back-end projects"/>
+            <label>Back-end Projects</label>
+               <input type="checkbox" value="data visualization"/>
+            <label>Data Visualization</label>
+               <input type="checkbox" value="challenges"/>
+            <label>Challenges</label>
+               <input type="checkbox" value="open source community"/>
+            <label>Open Source Community</label>
+               <input type="checkbox" value="gitter help rooms"/>
+            <label>Gitter help rooms</label>
+               <input type="checkbox" value="videos"/>
+            <label>Videos</label>
+               <input type="checkbox" value="city meetups"/>
+            <label>City Meetups</label>
+               <input type="checkbox" value="wiki"/>
+            <label>Wiki</label>
+               <input type="checkbox" value="forum"/>
+            <label>Forum</label>
+               <input type="checkbox" value="additional courses"/>
+            <label>Additional Courses</label>
+        </fieldset>
+        <fieldset>
+            <legend></legend>
+            <textarea name="" id="" placeholder="Enter your comment here"></textarea>
+        </fieldset>
+        
+        <button id="submit">Submit</button>
 
 
     </form>
