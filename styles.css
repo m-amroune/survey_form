@@ -9,11 +9,124 @@
 body, html{
     font-family: Lato, sans-serif;
     line-height: 1.5;
+    background-color: blue;
+    color: #fff;
 }
+
+
 
 #header{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
+#description{
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* FORM */
+
+form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: none;
+     flex-wrap: wrap;
+     gap: 0.5rem 2rem;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input{
+    height: 1.8rem;
+    padding-left: 12px;
+    margin-bottom: 5px;
+}
+
+/* FIELDSET WITH INPUT LIST TYPE RADIO */
+legend{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+#radio label {
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+input[type="radio"] {
+  transform: scale(1.4);
+  margin-right: 0.5rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.8);
+  margin-right: 0.5rem;
+}
+
+#favorite{
+    font-size: 1.2rem;
+}
+
+select{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+#dropdown{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: flex;
+    height: 40px;
+}
+
+
+
+/* FIELDSET WITH INPUT LIST TYPE CHECKBOX*/
+#checkbox label {
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.8);
+  margin-right: 0.5rem;
+}
+
+textarea{
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* BUTTON */
+
+#submit{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    font-size: 1rem;
+}
